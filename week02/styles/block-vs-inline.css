@@ -10,7 +10,7 @@ body {
 
 p,
 div {
-    background-color: beige;
+    background-color: hsl(174, 100%, 33%);
     margin: 1rem;
     padding: 1rem;
 }
