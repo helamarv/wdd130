@@ -33,6 +33,7 @@ main {
 main img {
   width: 150px;
   height: auto;
+  margin-left: 3rem;
 }
 
 aside {
