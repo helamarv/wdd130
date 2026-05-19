@@ -1,5 +1,10 @@
+:root {
+  --theme-color: darkblue;
+  --border: 1px solid;
+}
+
 nav {
-  background-color: darkblue;
+  background-color: var(--theme-color);
   padding: 10px;
 }
 
@@ -10,13 +15,13 @@ nav a {
 }
 
 h1 {
-  color: darkblue;
+  color: var(--theme-color);
 }
 
 img {
   width: 150px;
   height: auto;
-  border: 1px solid black;
+  border: var(--border) black;
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
@@ -42,7 +47,7 @@ main img {
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+  border: var(--border) rgb(0 0 0 / 0.2); /* 1️⃣ */
   padding: 1rem;
   background-color: #eee;
   color: #333;
@@ -56,6 +61,6 @@ aside img {
 
 footer{
   margin-top: 15px;
-  border-top: 1px solid #000;
+  border-top: var(--border) #000;
   text-align: center;
 }
