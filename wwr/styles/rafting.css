@@ -33,11 +33,6 @@ nav, p, section, article {
   padding: 8px;
 }
 
-
-
-
-
-
 article p {
     position: relative;
     top: -20px;
@@ -50,9 +45,6 @@ h2 {
     text-align: center;
     padding: 1rem;
 }
-
-
-
 
 /* Classes */
 .socialmedia a {
@@ -83,11 +75,10 @@ width: 80px;
     top: 280px;
     width: 95%;
     height: 120px;
-    padding: auto;
+    padding: 1rem;
     text-align: left;
     opacity: 0.8;
     background-color: var(--accent2-color);
-
 }
 
 .hero h1 {
