@@ -21,7 +21,16 @@ header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
-
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "hero hero"
+    "map form"
+    "employees employees";
+  gap: 24px;
+  align-items: start;
+}
 
 h1, h2 {
   font-family: var(--heading-font);
@@ -226,4 +235,120 @@ width: 50px;
   opacity: 0.8;
   background-color: var(--accent1-color);
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
+}
+
+
+.hero2 {
+  grid-area: hero;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  min-height: 450px;
+  border-radius: 8px;
+}
+
+.form-container {
+  grid-area: form;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.form-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--body-font);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.checkbox-group {
+  margin: 10px 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+
+/* --- Seção Employees (We Are Here to Serve You) --- */
+
+
+.employees {
+    grid-area: employees;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+    background-color: #f5f5f5; 
+    border: 1px solid #333333; 
+    padding: 24px;
+    text-align: center;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.employees h1 {
+    grid-column: 1 / -1; 
+    color: #000000; 
+    font-family: var(--body-font); 
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.employees figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.employees img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    background-color: #e0e0e0; 
+    margin-bottom: 12px;
+}
+
+.employees figcaption {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 500;
+}
+
+.map-container {
+    grid-area: map;
 }
