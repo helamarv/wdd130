@@ -22,7 +22,6 @@ header, main, footer {
   margin: 0 auto;
 }
 main {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "hero hero"
@@ -30,6 +29,11 @@ main {
     "employees employees";
   gap: 24px;
   align-items: start;
+}
+
+.main-contact{
+  display: grid;
+
 }
 
 h1, h2 {
@@ -203,6 +207,13 @@ width: 50px;
 .hero {
   position: relative;
 }
+.hero-home{
+  position: absolute;
+}
+.hero-home img{
+  width: 840px;
+  height: auto;
+}
 
 .hero img {
     display: block;
@@ -353,4 +364,156 @@ textarea {
 
 .map-container {
     grid-area: map;
+}
+
+
+
+.newsletter-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+.newsletter-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form button {
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+.cta-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f5f9ff;
+    border-radius: 12px;
+}
+
+.cta-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.cta-section p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+
+
+.rafting-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.info-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.content h3 {
+    margin-bottom: 1rem;
+}
+
+.content p {
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .rafting-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-card h2 {
+    padding: 1rem 1rem 0;
+}
+
+.trip-card p {
+    padding: 0 1rem 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* TABLE SECTION */
+.trip-table-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.trip-table {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.trip-table th {
+    background: #2563eb;
+    color: white;
 }
